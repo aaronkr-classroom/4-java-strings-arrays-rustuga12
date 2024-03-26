@@ -23,7 +23,10 @@ public class Ex502 {
 	}
 	
 	//Circle
-	public static void circ(int a) {
+	public static void circ(double a) {
+		String result = "Pizza size: " + 2 * a * 3.1415792 + " inches";
+		System.out.println(result);
+		
 		System.out.println("Pizza size: " + 2 * a * 3.1415792 + " inches: ");
 		
 			
@@ -60,6 +63,16 @@ public class Ex502 {
 		//Circle (pizza) 계산
 		circ(a);
 		area(a);
+	
+	
+	circ(b);
+	area(b);
+	
+	circ(12); //int 매게변수
+	circ(1.24567); // double 매게변수
+	
+	float c=12.345f;
+	circ(c);
 	}
-
+	
 }
